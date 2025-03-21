@@ -1,0 +1,16 @@
+cc_binary(
+    name = "example_ostream",
+    srcs = ["example_ostream.cc"],
+    defines = ["BAZEL_BUILD"],
+    copts = [
+        "-std=c++14",
+        "-I/usr/local/include", 
+    ],
+    linkopts = [
+        "-L/usr/local/lib", 
+        "-lopentelemetry_exporter_ostream_span",
+        "-lopentelemetry_trace",
+        "-lopentelemetry_resources",
+        "-lopentelemetry_common",
+    ],
+)
