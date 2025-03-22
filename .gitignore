@@ -1,0 +1,44 @@
+
+# Bazel output directories
+bazel-*
+bazel-out/
+bazel-bin/
+bazel-testlogs/
+bazel-cache/
+bazel-workspace/
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.exe
+*.out
+*.log
+
+# CMake leftovers (if any CMake used alongside)
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+build/
+_build/
+
+# Compiled protos
+*.pb.cc
+*.pb.h
+*.pb.go
+
+# Python cache (if any python scripts used)
+__pycache__/
+*.pyc
+
+# IDE / editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+
+# OS junk
+Thumbs.db
+ehthumbs.db
